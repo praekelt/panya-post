@@ -1,6 +1,7 @@
 from django.db import models
 
 from content.models import ModelBase
+#from ckeditor.fields import RichTextField
 
 
 class Post(ContentBase):
