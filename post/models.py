@@ -4,7 +4,7 @@ from content.models import ModelBase
 #from ckeditor.fields import RichTextField
 
 
-class Post(ContentBase):
+class Post(ModelBase):
     #content = RichTextField()
 
     class Meta():
