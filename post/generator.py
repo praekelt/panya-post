@@ -14,6 +14,7 @@ def generate():
             "model": "post.Post",
             "fields": {
                 "title": "Post %s Title" % i,
+                "description": "Post %s description with some added text to verify truncates where needed." % i,
                 "state": "published",
                 "image": random.sample(IMAGES, 1)[0],
                 "sites": {
