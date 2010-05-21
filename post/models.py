@@ -1,11 +1,10 @@
 from django.db import models
 
 from content.models import ModelBase
-#from ckeditor.fields import RichTextField
-
+from ckeditor.fields import RichTextField
 
 class Post(ModelBase):
-    #content = RichTextField()
+    content = RichTextField()
 
     class Meta():
         verbose_name = 'Post'
