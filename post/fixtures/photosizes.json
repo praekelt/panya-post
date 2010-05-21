@@ -1,0 +1,1 @@
+[{"pk": 15, "model": "photologue.photosize", "fields": {"name": "post_large", "watermark": null, "increment_count": false, "effect": null, "crop": true, "height": 151, "width": 269, "upscale": true, "pre_cache": false, "quality": 70}}]
