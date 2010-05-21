@@ -17,6 +17,7 @@ def generate():
                 "description": "Post %s description with some added text to verify truncates where needed." % i,
                 "state": "published",
                 "image": random.sample(IMAGES, 1)[0],
+                "content": "<strong>strong</strong><i>italic</i>",
                 "sites": {
                     "model": "sites.Site",
                     "fields": { 
@@ -26,15 +27,4 @@ def generate():
             },
         })
 
-    # gen post photo sizes
-    objects.append({
-        "model": "photologue.PhotoSize",
-        "fields": {
-            "name": "gallery_small",
-            "width": "188",
-            "height": "104",
-            "crop": True,
-        },
-    })
-    
     load_json(objects)
