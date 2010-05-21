@@ -2,5 +2,5 @@
     {% if not 'img' in object.content %}
         <img src="{{ object.get_post_large_url }}" width="269" height="151" alt="" />
     {% endif %}
-    {{ object.content|safe }}
+    <p>{{ object.content|safe }}</p>
 </div><!--/post-->
