@@ -4,7 +4,10 @@ from content.models import ModelBase
 from ckeditor.fields import RichTextField
 
 class Post(ModelBase):
-    content = RichTextField()
+    content = RichTextField(
+        blank=True,
+        null=True,
+    )
 
     class Meta():
         verbose_name = 'Post'
