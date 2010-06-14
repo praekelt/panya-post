@@ -1,5 +1,3 @@
-from django.db import models
-
 from panya.models import ModelBase
 from ckeditor.fields import RichTextField
 
